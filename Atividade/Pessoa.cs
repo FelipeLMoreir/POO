@@ -13,6 +13,7 @@ namespace Atividade
         private int Idade;
         private char Sexo;
         private double Altura;
+        public Endereco Endereco { get; set; }
 
         public void setNome(string nome)
         {
@@ -62,6 +63,7 @@ namespace Atividade
             Console.WriteLine("Idade:" + this.Idade);
             Console.WriteLine("Sexo:" + this.Sexo);
             Console.WriteLine("Altura:" + this.Altura);
+            this.Endereco.showInfo();
         }
     }
 }
