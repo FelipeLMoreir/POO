@@ -6,8 +6,12 @@ using System.Threading.Tasks;
 
 namespace Amimais
 {
-    internal class Leao : Animal
+    public class Leao : Animal
     {
+        public override void ExibirInfo()
+        {
+            base.ExibirInfo();
+        }
         public override void EmitirSom()
         {
             Console.WriteLine("Roar");

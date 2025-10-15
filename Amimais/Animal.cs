@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Amimais
 {
-    internal class Animal
+    public class Animal
     {
         public Animal animal {  get; set; }
         private string Nome { get; set; }
@@ -38,7 +38,7 @@ namespace Amimais
         {
             Console.WriteLine("Nome: " + this.Nome);
             Console.WriteLine("Idade: " + this.Idade);
-            this.animal.EmitirSom();
+            
 
         }
     }
