@@ -29,8 +29,13 @@ namespace SistemaPagamento
         }
         public virtual void ProcessarPagamento()
         {
+            Console.WriteLine("Digite o valor: ");
+            this.Valor = double.Parse(Console.ReadLine()!);
+            Console.WriteLine("Digite a data do pagamento: ");
+            this.DataPagamento = DateOnly.Parse(Console.ReadLine()!);
+
             Console.WriteLine("Valor: " + this.Valor);
-            Console.WriteLine("Data do pagamento: " + this.DataPagamento);
+            Console.WriteLine("Data do Pagamento: " + this.DataPagamento);
         }
     }
 }
