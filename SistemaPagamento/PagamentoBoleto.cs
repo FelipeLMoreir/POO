@@ -8,10 +8,14 @@ namespace SistemaPagamento
 {
     internal class PagamentoBoleto : Pagamento
     {
-        public override void ProcessarPagamento()
+        public override void ProcessarPagamento(DateTime dt, decimal valor)
         {
-            base.ProcessarPagamento();
-            Console.WriteLine("Pago com Boleto!!! ");
+            //base.ProcessarPagamento();
+            //Console.WriteLine("Pago com Boleto!!! ");
+            this.setValor(valor);
+            this.setDataPagamento(dt);
+
+            Console.WriteLine("Pagamento efetuado com Boleto!\n" + valor);
         }
     }
 }
