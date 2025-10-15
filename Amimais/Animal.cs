@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.Design;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,6 +12,25 @@ namespace Amimais
         //public Animal animal {  get; set; }
         private string Nome { get; set; }
         private int Idade {  get; set; }
+
+        private int id;
+
+        public int Id
+        {
+            get { return Id; }
+            //private set { Id = value; }
+            set 
+            {
+                if (value == 0)
+                {
+                    Console.WriteLine("Id não pode ser zero");
+                }
+                else
+                {
+                    Id = value;
+                }
+            }
+        }
 
         public void setNome(string nome)
         {
