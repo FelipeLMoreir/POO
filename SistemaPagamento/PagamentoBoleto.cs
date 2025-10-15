@@ -15,7 +15,8 @@ namespace SistemaPagamento
             this.setValor(valor);
             this.setDataPagamento(dt);
 
-            Console.WriteLine("Pagamento efetuado com Boleto!\n" + valor);
+            Console.WriteLine("Pagamento efetuado com Boleto!\nR$" + valor);
+            Console.WriteLine(dt);
         }
     }
 }

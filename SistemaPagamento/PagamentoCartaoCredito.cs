@@ -15,7 +15,8 @@ namespace SistemaPagamento
             this.setValor(valor);
             this.setDataPagamento(dt);
 
-            Console.WriteLine("Pagamento efetuado com Cartão de Crédito!\n" + valor);
+            Console.WriteLine("Pagamento efetuado com Cartão de Crédito!\nR$" + valor);
+            Console.WriteLine(dt);
         }
     }
 }
