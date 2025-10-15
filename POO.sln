@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GerenciamentoFunc", "Gerenc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Amimais", "Amimais\Amimais.csproj", "{C7D8D195-54E3-4ADE-BCB2-610C15AACDE8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaPagamento", "SistemaPagamento\SistemaPagamento.csproj", "{D575CA08-8259-43BC-881A-1ACCB8E36BEC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{C7D8D195-54E3-4ADE-BCB2-610C15AACDE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C7D8D195-54E3-4ADE-BCB2-610C15AACDE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C7D8D195-54E3-4ADE-BCB2-610C15AACDE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D575CA08-8259-43BC-881A-1ACCB8E36BEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D575CA08-8259-43BC-881A-1ACCB8E36BEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D575CA08-8259-43BC-881A-1ACCB8E36BEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D575CA08-8259-43BC-881A-1ACCB8E36BEC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
