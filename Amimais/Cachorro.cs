@@ -8,13 +8,17 @@ namespace Amimais
 {
     public class Cachorro : Animal
     {
-        public override void ExibirInfo()
+        //public override void ExibirInfo()
+        //{
+        //    base.ExibirInfo();
+        //}
+        public override string EmitirSom()
         {
-            base.ExibirInfo();
+            return "Au Au";
         }
-        public override void EmitirSom()
+        public Cachorro(string nome, int idade) : base(nome, idade)
         {
-            Console.WriteLine("Au Au");
+
         }
     }
 }

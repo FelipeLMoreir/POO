@@ -8,13 +8,17 @@ namespace Amimais
 {
     public class Gato : Animal
     {
-        public override void ExibirInfo()
+        //public override void ExibirInfo()
+        //{
+        //    base.ExibirInfo();
+        //}
+        public override string EmitirSom()
         {
-            base.ExibirInfo();
+            return "Miau";
         }
-        public override void EmitirSom()
+        public Gato(string nome, int idade) : base(nome, idade)
         {
-            Console.WriteLine("Miau");
+
         }
     }
 }

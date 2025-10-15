@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Amimais
 {
-    public class Animal
+    public abstract class Animal
     {
-        public Animal animal {  get; set; }
+        //public Animal animal {  get; set; }
         private string Nome { get; set; }
         private int Idade {  get; set; }
 
@@ -29,17 +29,27 @@ namespace Amimais
             return this.Idade;
         }
 
-        public virtual void EmitirSom()
+        public Animal(string nome, int idade)
         {
-
+            this.Nome = nome;
+            this.Idade = idade;
         }
-
-        public virtual void ExibirInfo()
+        public override string ToString()
         {
-            Console.WriteLine("Nome: " + this.Nome);
-            Console.WriteLine("Idade: " + this.Idade);
+            return $"Nome: {this.Nome}\nIdade: {this.Idade}";
+        }
+        //public virtual void EmitirSom()
+        //{
+
+        //}
+        public abstract string EmitirSom();
+
+        //public virtual void ExibirInfo()
+        //{
+        //    Console.WriteLine("Nome: " + this.Nome);
+        //    Console.WriteLine("Idade: " + this.Idade);
             
 
-        }
+        //}
     }
 }
